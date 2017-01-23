@@ -1,0 +1,52 @@
+main.container:before,
+main.container:after {
+  content: "";
+  display: table;
+}
+main.container:after {
+  clear: both;
+}
+main.container {
+  *zoom: 1;
+}
+
+main .new-tweet{
+  padding: 1em 0.5em 3em 0.5em;
+  height: 100%;
+  background-color: #eee;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+main .new-tweet h2{
+  text-align: left;
+  width: 100%;
+  /*float: left;*/
+  font-size: 32px;
+  border-bottom: 3px solid #0088dd;
+  margin-top: 0px;
+}
+
+main .new-tweet textarea{
+  font-style: normal;
+  /*float: left;*/
+  font-size: 32px;
+  /*line-height: 250%;*/
+  width: 100%;
+}
+
+.new-tweet input{
+  float: left;
+  font-size: 32px;
+}
+
+.new-tweet span{
+  text-align: right;
+  font-size: 32px;
+  float: right;
+}
+
+#clearfux {
+  clear: left;
+}
