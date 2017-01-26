@@ -7,18 +7,35 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <!-- Tweet form CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
+    <!-- All tweets form CSS -->
+    <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-    <!-- App JS -->
+    <!-- App JS  -->
+    <script type="text/javascript" src="/scripts/loadTweets.js"></script>
+
+    <script type="text/javascript" src="/scripts/createTweetElement.js"></script>
+
+    <script type="text/javascript" src="/scripts/renderTweets.js"></script>
+
+    <script type="text/javascript" src="/scripts/submitForm.js"></script>
+
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <script type="text/javascript" src="/scripts/tweet-hover.js"></script>
+
     <script type="text/javascript" src="/scripts/app.js"></script>
+
   </head>
 
   <body>
@@ -27,6 +44,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <button class="togglePost" type="button">Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -35,12 +53,28 @@
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
           <textarea name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <input type="submit" value="Tweet" id="submitTweet"/>
           <span class="counter">140</span>
-          <span id="clearfux"/>
         </form>
       </section>
-    </main>
 
-  </body>
+      <section id="all-tweets">
+        <!-- <article class="tweet">
+          <header>
+            <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/unknown-512.png" alt="ava">
+            <h3 class="usrFullname">Full Name</h3>
+            <h5 class="usrname">username</h5>
+          </header>
+          <p class="tweetText">The novelist Rick Moody wrote a short story for Electric Literature called "Some Contemporary Characters," composed entirely of tweets.</p>
+          <footer>
+            <h6 class="tweet-date">Some time ago</h6>
+            <div class="icons">
+              <i class="material-icons">favorite_border</i>
+              <i class="material-icons">sentiment_very_dissatisfied</i>
+              <i class="material-icons">share</i>
+            </div>
+          </footer>
+        </article> -->
+      </section>
+    </main>
 </html>

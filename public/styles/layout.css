@@ -29,7 +29,7 @@ body {
   color: #244751;
   background-color: #eee;
   font-family: 'Roboto Condensed', sans-serif;
-  text-align: center;
+  /*text-align: center;*/
   margin: auto;
   height: 100%;
 }
@@ -45,5 +45,5 @@ main {
   margin: auto;
   padding: 1em;
   background-color: white;
-  z-index: -1;
+  z-index: 0;
 }

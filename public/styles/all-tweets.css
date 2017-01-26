@@ -1,0 +1,87 @@
+article{
+  margin: 20px 0px 10px 0px;
+  border-radius: 10px;
+  border-width : 1px;
+  border-style: solid;
+  opacity: 0.7;
+}
+
+article header{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  text-align: left;
+  background-color: #eee;
+  height: 100%;
+  display: inline-block;
+}
+
+article header img{
+  height: 15%;
+  width: 15%;
+  margin: 1em;
+  float: left;
+}
+
+article header .usrFullname{
+  position: absolute;
+  left: 25%;
+  /*text-align: left;*/
+  /*clear: right;*/
+  /*clear: left;*/
+}
+
+article header .usrname{
+  position: absolute;
+  left: 70%;
+  text-align: right;
+  /*float: right;*/
+  /*text-align: right;*/
+}
+
+article .tweetText {
+  /*text-align: justify;*/
+  font-size: 30px;
+  margin: 1.5em 1em 1.5em 1em;
+  line-height: 1.5em;
+}
+
+article footer {
+  height: 20%;
+  width: 100%;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+article footer {
+  height: 2em;
+  width: 100%;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+article .tweet-date {
+  float: left;
+  margin: 1em 0em 1em 2em;
+  /*margin-left: 20px;*/
+}
+
+.icons {
+  float: right;
+  height: 500px;
+  /*width: 100px;*/
+  /*top: -300px;*/
+  /*text-align: right;*/
+  /*position: absolute;*/
+  /*display: inline-block;*/
+}
+
+.icons i{
+  position: relative;
+  left: 250px;
+  top: 7px;
+}
+
+.icons i:hover{
+  color: turquoise;
+}
