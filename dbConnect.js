@@ -64,6 +64,6 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
 
   // ==> At the end, we close the connection:
   // db.close();
-  });
+  // });
 
 });

@@ -8,12 +8,14 @@ function submitForm(){
     // return 0;
   }else{
     $tweet = $("textarea").serialize();
+    console.log("Serialized: ", $tweet);
     $.ajax({
       url: '/tweets',
       data: $tweet,
       method: 'POST',
       success: function(){
         $("textarea").val("");
+        console.log("Considered succesful...");
         loadTweets(renderTweets);
       }
     });
